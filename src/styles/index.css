@@ -1,6 +1,4 @@
-/* Global styles and CSS reset */
 :root {
-  /* Color palette */
   --color-primary: #667eea;
   --color-primary-dark: #5a67d8;
   --color-secondary: #48bb78;
@@ -12,14 +10,12 @@
   --color-surface: #f7fafc;
   --color-border: #e2e8f0;
 
-  /* Dark theme colors */
   --color-dark-bg: #1a202c;
   --color-dark-surface: #2d3748;
   --color-dark-text: #f7fafc;
   --color-dark-text-light: #cbd5e0;
   --color-dark-border: #4a5568;
 
-  /* Spacing */
   --spacing-xs: 0.25rem;
   --spacing-sm: 0.5rem;
   --spacing-md: 1rem;
@@ -27,7 +23,6 @@
   --spacing-xl: 2rem;
   --spacing-2xl: 3rem;
 
-  /* Typography */
   --font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   --font-size-sm: 0.875rem;
   --font-size-base: 1rem;
@@ -37,18 +32,15 @@
   --font-size-3xl: 2rem;
   --font-size-4xl: 2.5rem;
 
-  /* Transitions */
   --transition-fast: 150ms ease;
   --transition-base: 250ms ease;
   --transition-slow: 350ms ease;
 
-  /* Border radius */
   --radius-sm: 0.25rem;
   --radius-md: 0.5rem;
   --radius-lg: 0.75rem;
   --radius-xl: 1rem;
 
-  /* Shadows */
   --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.1);
   --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
   --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.1);
@@ -81,7 +73,6 @@ body {
   flex-direction: column;
 }
 
-/* Typography */
 h1, h2, h3, h4, h5, h6 {
   font-weight: 600;
   line-height: 1.2;
@@ -109,7 +100,6 @@ a:hover {
   color: var(--color-primary-dark);
 }
 
-/* Utility classes */
 .container {
   width: 100%;
   max-width: 1200px;
@@ -150,7 +140,6 @@ a:hover {
   background-color: var(--color-border);
 }
 
-/* Dark theme */
 .theme-dark {
   --color-text: var(--color-dark-text);
   --color-text-light: var(--color-dark-text-light);
@@ -165,7 +154,6 @@ a:hover {
   border-color: var(--color-dark-border);
 }
 
-/* Loading spinner */
 .spinner {
   display: flex;
   justify-content: center;
@@ -175,7 +163,6 @@ a:hover {
   color: var(--color-text-light);
 }
 
-/* Error message */
 .error {
   background-color: #fed7d7;
   color: #c53030;

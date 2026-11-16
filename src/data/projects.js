@@ -1,4 +1,3 @@
-// Sample project data - replace with your own projects!
 export const projects = [
   {
     id: 'task-manager',

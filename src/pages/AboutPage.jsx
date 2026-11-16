@@ -10,7 +10,11 @@ function AboutPage() {
             alt="Profile"
             className="profile-image"
             onError={(e) => {
-              e.target.src = 'https://via.placeholder.com/300x300?text=Profile'
+              if (e.target.src.includes('via.placeholder.com')) {
+                e.target.style.display = 'none'
+              } else {
+                e.target.src = 'https://via.placeholder.com/300x300?text=Profile'
+              }
             }}
           />
           <div className="about-text">

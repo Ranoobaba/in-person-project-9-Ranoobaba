@@ -1,5 +1,3 @@
-// Component for displaying project cards in the grid
-
 function ProjectCard({ project }) {
   return (
     <div className="project-card">
@@ -9,7 +7,11 @@ function ProjectCard({ project }) {
           alt={project.title}
           className="project-card-image"
           onError={(e) => {
-            e.target.src = 'https://via.placeholder.com/400x300?text=' + project.title
+            if (e.target.src.includes('via.placeholder.com')) {
+              e.target.style.display = 'none'
+            } else {
+              e.target.src = 'https://via.placeholder.com/400x300?text=' + project.title
+            }
           }}
         />
       )}
